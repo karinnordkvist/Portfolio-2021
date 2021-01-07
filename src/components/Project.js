@@ -79,7 +79,7 @@ const ProjectWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 0;
+  margin: 50px 0;
   transition: transform 0.5s ease-in-out;
 
   @media (max-width: 650px) {

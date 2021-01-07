@@ -1,19 +1,40 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Social = () => {
+export const HeaderSocial = () => {
   return (
-    <SocialWrapper
-      offset={offset}
-      ref={wrapperRef}
-      currentOffset={currentOffset}
-      currentHeight={currentHeight}
-    >
-      <ContactText>Karin Nordkvist</ContactText>
-      <ContactText>
-        Send me an email <a href="mailto:kontakt@karinnordkvist.se">here</a>!
-      </ContactText>
-      <ContactText>+46 721 77 27 77</ContactText>
+    <SocialWrapper>
+      <HeaderSocialIconWrapper>
+        <a href="">
+          <SocialImage src="./images/linkedin-gray.svg" />
+          <p>Linkedin</p>
+        </a>
+      </HeaderSocialIconWrapper>
+      <HeaderSocialIconWrapper>
+        <a href="">
+          <SocialImage src="./images/github-gray.svg" />
+          <p>Github</p>
+        </a>
+      </HeaderSocialIconWrapper>
+    </SocialWrapper>
+  );
+};
+
+export const FooterSocial = () => {
+  return (
+    <SocialWrapper>
+      <FooterSocialIconWrapper>
+        <a href="">
+          <SocialImage src="./images/linkedin-gray.svg" />
+          <p>Linkedin</p>
+        </a>
+      </FooterSocialIconWrapper>
+      <FooterSocialIconWrapper>
+        <a href="">
+          <SocialImage src="./images/github-gray.svg" />
+          <p>Github</p>
+        </a>
+      </FooterSocialIconWrapper>
     </SocialWrapper>
   );
 };
@@ -22,28 +43,34 @@ const SocialWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background: ${(props) =>
-    props.offset < props.currentOffset - props.currentHeight * 2
-      ? '#fff'
-      : '#f4f0ec'};
-  opacity: ${(props) =>
-    props.offset < props.currentOffset - props.currentHeight * 2 ? '0' : '1'};
-  padding: 100px;
-  transition: all 1s ease-in-out;
 `;
-const ContactText = styled.p`
-  font-size: 32px;
-  line-height: 1.6;
-  text-align: center;
-  width: 60vw;
-  max-width: 1050px;
 
-  @media (max-width: 380px) {
-    font-size: 20px;
+const HeaderSocialIconWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 20px 0 20px;
+
+  a {
+    text-align: center;
   }
 `;
 
-const Highlighted = styled.span`
-  border-bottom: 2px solid #000;
+const FooterSocialIconWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 20px 0 20px;
+
+  a {
+    text-align: center;
+  }
+`;
+
+const SocialImage = styled.img`
+  height: 20px;
+  width: auto;
+  margin-bottom: 10px;
 `;

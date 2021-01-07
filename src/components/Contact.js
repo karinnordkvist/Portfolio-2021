@@ -1,6 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import styled from 'styled-components';
 
+import { FooterSocial } from './Social';
+
 export const Contact = ({ offset }) => {
   const wrapperRef = useRef();
   const [currentOffset, setCurrentOffset] = useState();
@@ -23,6 +25,7 @@ export const Contact = ({ offset }) => {
         Send me an email <a href="mailto:kontakt@karinnordkvist.se">here</a>!
       </ContactText>
       <ContactText>+46 721 77 27 77</ContactText>
+      <FooterSocial />
     </ContactWrapper>
   );
 };

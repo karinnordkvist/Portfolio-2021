@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { HeaderSocial } from './Social';
+
 export const Header = () => {
   return (
     <HeaderWrapper>
       <Heading>Karin Nordkvist - Frontend Developer - Designer</Heading>
       <Stroke></Stroke>
+      <HeaderSocial />
       <IntroWrapper>
         <IntroImage src="./images/karin.jpg" />
         <IntroText>
