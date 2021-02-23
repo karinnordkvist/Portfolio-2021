@@ -4,14 +4,22 @@ import styled from 'styled-components';
 export const FeaturedProject = ({ project }) => {
   return (
     <ProjectWrapper>
-      <ImageLink href={project.url} target="_blank">
+      <ImageLink href={project.url} target="_blank" rel="noopener noreferrer">
         <ProjectImage src={project.imgSrc} />
       </ImageLink>
       <ProjectTextWrapper>
-        <ProjectTitle href={project.repository}>→ {project.title}</ProjectTitle>{' '}
+        <ProjectTitle
+          href={project.repository}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          → {project.title}
+        </ProjectTitle>{' '}
         <ProjectText>
           {project.text}
-          <a href={project.url}>>></a>
+          <a href={project.url} target="_blank" rel="noopener noreferrer">
+            >>
+          </a>
         </ProjectText>
         <TagsWrapper>
           {project.tags.map((tag, index) => {
@@ -26,14 +34,27 @@ export const FeaturedProject = ({ project }) => {
 export const NonFeaturedProject = ({ project }) => {
   return (
     <NonFeaturedProjectWrapper>
-      <ImageLink href={project.url} target="_blank">
+      <ImageLink
+        href={project.url}
+        target="_blank"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <NonFeaturedImg src={project.imgSrc} />
       </ImageLink>
       <NonFeaturedProjectTextWrapper>
-        <ProjectTitle href={project.repository}>{project.title}</ProjectTitle>{' '}
+        <ProjectTitle
+          href={project.repository}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {project.title}
+        </ProjectTitle>{' '}
         <ProjectText>
           {project.text}
-          <a href={project.url}>>></a>
+          <a href={project.url} target="_blank" rel="noopener noreferrer">
+            >>
+          </a>
         </ProjectText>
         <TagsWrapper>
           {project.tags.map((tag, index) => {

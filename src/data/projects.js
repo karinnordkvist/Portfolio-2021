@@ -3,12 +3,13 @@ export const projects = [
     imgSrc:
       './images/karin-nordkvist-react-redux-router-sanity-caroline-borg.jpg',
     subject: 'React/Redux/Router/Sanity',
-    title: 'Web for Caroline Borg built with React/Sanity',
+    title: 'Design + Web for Caroline Borg built with React/Sanity',
     text:
       'Home page of creative storyteller Caroline Borg. Built with React, React Router, Redux and backend built in Sanity.',
     repository: 'https://github.com/karinnordkvist/Technigo-20-20-FINAL',
     url: 'http://carolineborg.netlify.app/',
     tags: [
+      'Design',
       'React',
       'Sanity',
       'Styled Components',
@@ -48,7 +49,13 @@ export const projects = [
       'A responsive survey website featuring questions with input texboxes, checkboxes, radiobuttons and a dropdown selector. Survey results are connected to a Realtime Database on Google Firebase.',
     repository: 'https://github.com/karinnordkvist/Technigo-9-24-Survey',
     url: 'http://iwannabecomeafrontenddev.netlify.app/',
-    tags: ['HTML5', 'CSS3', 'JavaScript ES6', 'React', 'Realtime Database'],
+    tags: [
+      'HTML5',
+      'CSS3',
+      'JavaScript ES6',
+      'React',
+      'Firebase Realtime Database',
+    ],
     featured: true,
   },
   {
@@ -77,7 +84,7 @@ export const projects = [
       'Listing movies from The Movie Database API, allowing the user to see each movie individually, similar movies to each one or list movies by chosen category.',
     repository: 'https://github.com/karinnordkvist/Technigo-11-24-Movies',
     url: 'https://movies-by-karin.netlify.app/',
-    tags: ['HTML5', 'CSS3', 'JavaScript ES6', 'API'],
+    tags: ['HTML5', 'CSS3', 'JavaScript ES6', 'React', 'Router'],
     featured: true,
   },
   {
@@ -89,7 +96,7 @@ export const projects = [
     repository:
       'https://github.com/karinnordkvist/Technigo-10-24-HappyThoughts',
     url: 'http://happihappiness.netlify.app/',
-    tags: ['HTML5', 'CSS3', 'JavaScript ES6', 'React', 'API'],
+    tags: ['HTML5', 'CSS3', 'JavaScript ES6', 'React'],
     featured: true,
   },
   // {
@@ -175,7 +182,14 @@ export const projects = [
       'Business website for podcast/community Vattnet Går. Design, Graphic profile and development made by me. Built using Elementor for Wordpress.',
     repository: '',
     url: 'https://vattnetgar.se/',
-    tags: ['HTML5', 'CSS3', 'Wordpress', 'Elementor'],
+    tags: [
+      'Design',
+      'Art Direction',
+      'HTML5',
+      'CSS3',
+      'Wordpress',
+      'Elementor',
+    ],
     featured: false,
   },
   {
@@ -186,7 +200,15 @@ export const projects = [
       "Webshop for me and my friend Andrea's side project Teenytiny. Built in Wordpress featuring WooCommerce and Klarna plugin.",
     repository: '',
     url: 'https://teenytinyuniverse.se/',
-    tags: ['HTML5', 'CSS3', 'Wordpress', 'WooCommerce', 'Klarna'],
+    tags: [
+      'Design',
+      'Art Direction',
+      'HTML5',
+      'CSS3',
+      'Wordpress',
+      'WooCommerce',
+      'Klarna',
+    ],
     featured: false,
   },
 ];
