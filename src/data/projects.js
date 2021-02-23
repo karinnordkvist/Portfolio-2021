@@ -1,5 +1,24 @@
 export const projects = [
   {
+    imgSrc:
+      './images/karin-nordkvist-react-redux-router-sanity-caroline-borg.jpg',
+    subject: 'React/Redux/Router/Sanity',
+    title: 'Web for Caroline Borg built with React/Sanity',
+    text:
+      'Home page of creative storyteller Caroline Borg. Built with React, React Router, Redux and backend built in Sanity.',
+    repository: 'https://github.com/karinnordkvist/Technigo-20-20-FINAL',
+    url: 'http://carolineborg.netlify.app/',
+    tags: [
+      'React',
+      'Sanity',
+      'Styled Components',
+      'JavaScript ES6',
+      'Redux',
+      'Router',
+    ],
+    featured: true,
+  },
+  {
     imgSrc: './images/karin-nordkvist-react-redux-labyrinth.jpg',
     subject: 'React/Redux',
     title: 'Labyrinth Game made in React using Redux',
@@ -48,7 +67,7 @@ export const projects = [
       'React',
       'Redux',
     ],
-    featured: true,
+    featured: false,
   },
   {
     imgSrc: './images/karin-nordkvist-react-router-movies.jpg',
